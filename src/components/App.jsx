@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 import Feedback from './Feedback/Feedback';
 
 export class App extends Component {
@@ -11,10 +11,10 @@ export class App extends Component {
     const options = Object.keys(this.state);
     return (
       <div>
-        <Feedback />
+        <Feedback options={options} onLeaveFeedback={this.handleFeedback} />
       </div>
     );
   }
 }
 
-export default App;
+
