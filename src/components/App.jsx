@@ -10,10 +10,9 @@ export class App extends Component {
   render() {
     const options = Object.keys(this.state);
     return (
-      <>
-        <h1>hello</h1>
+      <div>
         <Feedback />
-      </>
+      </div>
     );
   }
 }
