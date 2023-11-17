@@ -1,0 +1,14 @@
+.list {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  box-sizing: border-box;
+}
+
+.item {
+  list-style: none;
+}
+.btn {
+  background-color: rgb(120, 147, 160);
+  border-radius: 5px;
+}

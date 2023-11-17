@@ -1,12 +1,14 @@
 import PropTypes from 'prop-types';
-import css from './Feedback.css';
+import css from './Feedback.module.css';
 
 const Feedback = ({ options }) => {
   return (
-    <ul className="btnList">
+    <ul className={css.list}>
       {options.map(option => (
-        <li key={option}>
-          <button type="button">{option}</button>
+        <li key={option} className={css.item}>
+          <button type="button" className={css.btn}>
+            {option}
+          </button>
         </li>
       ))}
     </ul>
@@ -15,7 +17,6 @@ const Feedback = ({ options }) => {
 
 Feedback.propTypes = {
   options: PropTypes.arrayOf(PropTypes.string).isRequired,
-  onLeaveFeedback: PropTypes.func.isRequired,
 };
 
 export default Feedback;

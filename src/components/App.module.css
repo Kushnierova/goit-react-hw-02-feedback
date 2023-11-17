@@ -1,0 +1,14 @@
+.formFeedback{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+
+
+}
+.item{
+    padding: 15px;
+    list-style: none;
+    background-color: rgb(163, 204, 225);
+    box-shadow: 5px;
+    border-radius: 10px;
+}
