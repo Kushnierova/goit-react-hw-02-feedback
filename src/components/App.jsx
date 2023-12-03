@@ -9,19 +9,23 @@ export class App extends Component {
     neutral: 0,
     bad: 0,
   };
+
+onCountOption = e =>{
+}
+
   render() {
     const options = Object.keys(this.state);
     return (
-      <ul className={css.formFeedback}>
-        <li className={css.item}>
-          <h2>Please leave feedback</h2>
+      <div className={css.formFeedback}>
+        <div className={css.feedback}>
+          <h2 className={css.feedbackTitle}>Please leave feedback</h2>
           <Feedback options={options} />
-        </li>
-        <li className={css.item}>
-          <h2>Statistics</h2>
+        </div>
+        <div className={css.statistics}>
+          <h2 className={css.statisticsTitle}>Statistics</h2>
           <Statistics options={options}/>
-        </li>
-      </ul>
+        </div>
+      </div>
     );
   }
 }

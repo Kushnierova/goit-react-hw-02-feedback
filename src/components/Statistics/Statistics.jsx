@@ -6,7 +6,9 @@ const Statistics = ({ options }) => {
     <ul className={css.list}>
       {options.map(option => (
         <li key={option} className={css.item}>
-         <p>{option}:0</p> 
+          <p className={css.optionName}>
+            {option} : <span className={css.resultSpan}>0</span>
+          </p>
         </li>
       ))}
     </ul>
@@ -14,6 +16,8 @@ const Statistics = ({ options }) => {
 };
 
 Statistics.propTypes = {
-    options: PropTypes.arrayOf(PropTypes.string).isRequired,
-  };
+  options: PropTypes.arrayOf(PropTypes.string).isRequired,
+};
+
+
 export default Statistics;

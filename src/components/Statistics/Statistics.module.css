@@ -1,15 +1,18 @@
-.list{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
-    box-sizing: border-box;
-    padding-left: 0;
-
+.list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 0px;
+  gap: 5px;
 }
 
-
 .item {
-    list-style: none;
-
+  list-style: none;
+}
+.optionName {
+  color: rgb(0, 33, 50);
+  margin: 0;
+}
+.resultSpan {
+  color: rgb(4, 73, 103);
 }
