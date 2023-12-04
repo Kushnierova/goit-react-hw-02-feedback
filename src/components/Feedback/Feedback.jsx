@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import css from './Feedback.module.css';
 
-const Feedback = ({ options, onCountOption }) => {
+const Feedback = ({ options, onCountFeedback }) => {
   return (
     <ul className={css.list}>
       {options.map(option => (
@@ -9,7 +9,8 @@ const Feedback = ({ options, onCountOption }) => {
           <button
             type="submit"
             className={css.btn}
-            onClick={onCountOption}
+            name={option}
+            onClick={onCountFeedback}
           >
             {option}
           </button>
