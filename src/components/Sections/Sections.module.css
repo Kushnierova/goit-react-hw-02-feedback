@@ -1,0 +1,19 @@
+.feedback {
+    padding: 15px;
+    background-color: rgb(0, 33, 50);
+    box-shadow: 2px 2px 20px rgba(0, 0, 7, 0.675);
+    border-radius: 10px;
+  }
+  .feedbackTitle {
+    color: rgb(123, 214, 140);
+  }
+  .statistics {
+    padding: 15px;
+    background-color: rgb(123, 214, 140);
+    box-shadow: 2px 2px 20px rgba(37, 181, 95, 0.675);
+    border-radius: 10px;
+  }
+  .statisticsTitle {
+      color: rgb(0, 33, 50);
+  }
+  

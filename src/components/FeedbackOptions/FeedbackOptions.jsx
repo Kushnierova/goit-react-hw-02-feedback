@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
-import css from './Feedback.module.css';
+import css from './FeedbackOptions.module.css';
 
-const Feedback = ({ options, onCountFeedback }) => {
+const FeedbackOptions = ({ options, onLeaveFeedback }) => {
   return (
     <ul className={css.list}>
       {options.map(option => (
@@ -10,7 +10,7 @@ const Feedback = ({ options, onCountFeedback }) => {
             type="submit"
             className={css.btn}
             name={option}
-            onClick={onCountFeedback}
+            onClick={onLeaveFeedback}
           >
             {option}
           </button>
@@ -20,8 +20,8 @@ const Feedback = ({ options, onCountFeedback }) => {
   );
 };
 
-Feedback.propTypes = {
+FeedbackOptions.propTypes = {
   options: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 
-export default Feedback;
+export default FeedbackOptions;
